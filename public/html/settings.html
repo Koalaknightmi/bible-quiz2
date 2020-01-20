@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="/manifest.json">
+    <title>Nazarene Bible Quizzing Online</title>
+    <meta name="description" content="a online bible quizzing website using the nazarene style of quizzing">
+    <meta name="keywords" content="bible, quizzing, bible quiz, nazarene, nazarene bible quizzing online">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Nazarene Bible Quizzing Online">
+    <meta name="theme-color" content="#fafafa" />
+    <!--  <link rel="preload" href="/gethebrews" as="text">
+      import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+    <script>
+      if (location.protocol !== "https:") {
+        location.protocol = "https:"
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131092423-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-131092423-2');
+    </script>
+    <script src="/js/bundles/settings.bundle.js" charset="utf-8" defer></script>
+    <script src="/js/bundles/main.bundle.js" charset="utf-8" defer></script>
+    <script src="/js/bundles/nav.bundle.js" charset="utf-8" defer></script>
+    <script src="/js/bundles/offline.bundle.js" charset="utf-8" defer></script>
+    <!-- import the webpage's client-side javascript file 
+      <script src="/js/client.js" defer></script>-->
+  </head>
+  <body>
+    <header id = "nav">
+      <div id = "normal-nav">
+        <!--<a href="/html/typequizzing.html">type quizzing</a>
+        <a href="/html/scripture-portion.html">scripture portion</a>
+        <a href="/html/leaderboard.html">leaderboard</a>
+        <a href="/html/voicequizzing.html">voice quizzing</a>-->
+      </div>
+      <div id = "moble-nav">
+        <button style = "width:100%;heigth:100%;" id = "navbtn"><i class="material-icons md-24" style = "color:black;font-size:30px;">menu</i></button>
+        <div id = "sdown-nav">
+          <!--<a class = "d-nav-a" href="/html/typequizzing.html">type quizzing</a>
+          <a class = "d-nav-a" href="/html/scripture-portion.html">scripture portion</a>
+          <a class = "d-nav-a" href="/html/leaderboard.html">leaderboard</a>
+          <a class = "d-nav-a" href="/html/voicequizzing.html">voice quizzing</a>-->
+        </div>
+      </div>
+    </header>
+    <main class = "page" id="home">
+      <div id="status"></div>
+      
+      <form id = "settings" ref='uploadForm'>
+        <input type="color" id="m-m-c" name="m-m-c">
+        <label for="m-m-c">username color</label>
+        <label for="file">change your profile image:</label>
+        <input type="file" name="file" id = "file">
+        <br>
+        <input type="submit">
+      </form>
+      <div id = "sucsess"></div>
+    </main>
+    <footer class="kcss-main-footer"><span class="kcss-copyright"><a href="https://repl.it/@Koalaknightmi" target="_blank">Copyright &copy; 2018 Koalastrikermi/koalaknightmi</a></span></footer>
+  </body>
+  <!---->
+</html>
