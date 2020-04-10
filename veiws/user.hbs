@@ -17,6 +17,9 @@
                   {{/if}}
               </div>
               <div id = "p-username">
+                  {{#if userdata.titled}}
+                      <span style = "color:red" id = "btitled" title = "titled?">{{userdata.tabr}}</span>           
+                  {{/if}}
                   <a><b style = "color:{{userdata.nameCOl}}" id = "name-b">{{userdata.userName}}</b></a>
                   <b class = "state-b">{{userdata.state}}</b>
                    {{#if userdata.isAdmin}}
@@ -37,6 +40,9 @@
               {{#each friendsdata}}
               <div id = "friend-a">
                 <div class = "friend">
+                {{#if this.titled}}
+                    <span style = "color:red" id = "fbtitled" title = "titled?">{{this.tabr}}</span>           
+                {{/if}}
                 <a class = "f-username" style = "color:{{this.nameCOl}}" href = "/user/{{this.userName}}">{{this.userName}}</a>
                 <b class = "state-b f-state">{{this.state}}</b>
                  {{#if this.isAdmin}}

@@ -106,6 +106,20 @@ td{
   content: "";
   clear: both;
 }
+#team12{
+  float:left;
+}
+#team22{
+  float:right;
+}
+#team12:after{
+  content: "";
+  clear: both;
+}
+#team22:after{
+  content: "";
+  clear: both;
+}
 #jump-btn,#start-btn{
  /* background:#4CAF50;*/
   width:100%;
@@ -113,9 +127,6 @@ td{
   bottom:0%;
   left:0px;
   height:20%;
-}
-#jump-btn{
-  display:none;
 }
 /*
 #jump-btn:hover{
@@ -137,6 +148,15 @@ button.kcss-ripple-btn:focus:not(:active)::after {
   background:white;
 }
 #scoresheet tr td{
+  padding:auto;
+  margin:0px!Important;
+}
+#scoresheet2{
+  margin:auto;
+  width:100%;
+  background:white;
+}
+#scoresheet2 tr td{
   padding:auto;
   margin:0px!Important;
 }

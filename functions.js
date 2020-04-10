@@ -113,7 +113,17 @@ exports.asort = (a,t,s) => {
     }
   }
 //console.log(ha2)
-return ha2;
+  let ha3 = {};
+Object.keys(ha2).sort(function(a,b){
+  if (parseInt(a.replace(/[a-z]/g, ''))<parseInt(b.replace(/[a-z]/g, ''))) {
+    return -1;
+  } else {
+    return 1;
+  }
+}).forEach(function(key) {
+  ha3[key] = ha2[key];
+});
+return ha3;
 };
 exports.pad = function (l, s) {
   return (l -= this.length) > 0 ? (s = new Array(Math.ceil(l / s.length) + 1).join(s)).substr(0, s.length) + this + s.substr(0, l - s.length) : this;
