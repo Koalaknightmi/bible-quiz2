@@ -8,7 +8,7 @@ var p2p = require("socket.io-p2p-server").Server;
 const io = socketio(server); // Attach socket.io to our server
 const email = "NazareneBibleQuizOnline@bible-quiz-online.glitch.me";
 const hbs = require("hbs");
-const webPush = require("web-push");
+//const webPush = require("web-push");
 var bodyParser = require("body-parser");
 var serveIndex = require("serve-index");
 var serveStatic = require("serve-static");
@@ -100,19 +100,19 @@ fs.readdir(testFolder, (err, files) => {
   });
 });*/
 
-if (!process.env.VPU || !process.env.VPR) {
+/*if (!process.env.VPU || !process.env.VPR) {
   console.log(
     "You must set the VAPID_PUBLIC_KEY and VAPID_PRIVATE_KEY " +
       "environment variables. You can use the following ones:"
   );
   console.log(webPush.generateVAPIDKeys());
   //return;
-}
-webPush.setVapidDetails(
+}*/
+/*webPush.setVapidDetails(
   "https://serviceworke.rs/",
   process.env.VPU,
   process.env.VPR
-);
+);*/
 const options = {
   TTL: 1 * 60 * 60 * 24
 };
@@ -229,7 +229,7 @@ updateOne("users", users2[i],
 var gop2p = function(socket, room) {
   p2p(socket, null, room);
 };
-var push = (push = (opt, to, webPush) => {
+/*var push = (push = (opt, to, webPush) => {
   if (to === "") {
     let query = subsref.get().then(subs => {
       subs.forEach(sub => {
@@ -266,7 +266,7 @@ var push = (push = (opt, to, webPush) => {
         });
       });
   }
-});
+});*/
 var timeSince = f.timeSince;
 var totime = f.totime;
 var asort = f.asort;
